@@ -1,0 +1,36 @@
+﻿@model Contactus
+ 
+<div class="container" style="margin-top:35px ;margin-bottom:25px">      
+    <div class="col-10">
+      <form asp-action="SaveContact">
+          <div class="row" style="margin-top:30px">
+           
+              <div class="col-md-4 form-group">
+              <input type="text" asp-for="Name"  class="form-control"  placeholder="Your Name" required>
+            </div>
+           
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" asp-for="Email" placeholder="Your Email" required>
+            </div>
+        
+            
+          <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="tel" class="form-control"  asp-for="Subject"  placeholder="Subject" required>
+            </div>
+
+             <div class="form-group mt-3">
+            <textarea class="form-control" asp-for="Message" required rows="5" placeholder="Message (Optional)"></textarea>
+          </div>
+         
+             
+          
+          </div>
+          
+         
+         
+
+         
+          <div class="text-center" ><button  class="btn btn-success" type="submit" style="margin-top:20px"> Send Message</button></div>
+        </form>
+    </div> 
+</div>
